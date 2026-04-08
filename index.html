@@ -52,33 +52,35 @@
             margin-right: auto;
         }
 
-.header-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
 
-.header-top h1 {
-    margin: 0;
-}
+        .header-top h1 {
+            margin: 0;
+        }
 
         nav {
             background-color: #ffffff;
             padding: 15px;
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
             z-index: 100;
+            overflow-x: auto;
         }
 
         nav a {
             text-decoration: none;
             color: #2a5298;
             font-weight: 600;
+            white-space: nowrap;
         }
 
         section {
@@ -153,40 +155,40 @@
             text-decoration: underline;
         }
 
-            .whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25d366;
-    color: white;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 28px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 28px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
 
-    .whatsapp:hover {
-      transform: scale(1.1);
-      transition: 0.2s;
-    }
+        .whatsapp:hover {
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
 
-@media (max-width: 600px) {
-    .header-top {
-        gap: 8px;
-    }
+        @media (max-width: 600px) {
+        .header-top {
+            gap: 8px;
+        }
 
-    .logo {
-        width: 32px;
-        height: 32px;
-    }
+       .logo {
+            width: 32px;
+            height: 32px;
+       }
 
-    header h1 {
-        font-size: 1.8rem;
-    }
+       header h1 {
+            font-size: 1.8rem;
+        }
 }
         
     </style>
