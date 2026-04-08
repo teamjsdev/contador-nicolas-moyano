@@ -36,7 +36,7 @@
         header {
             background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
-            padding: 70px 20px;
+            padding: 35px 20px;
             text-align: center;
         }
 
@@ -51,6 +51,17 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-top h1 {
+    margin: 0;
+}
 
         nav {
             background-color: #ffffff;
@@ -107,6 +118,24 @@
             text-decoration: none;
         }
 
+        .logo {
+            width: 42px;
+            height: 42px;
+            object-fit: contain;
+        }
+
+        .acerca-img {
+            margin-top: 30px;
+        }
+
+        .acerca-img img {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 12px;
+        }
+
         footer {
             background-color: #1e3c72;
             color: white;
@@ -144,16 +173,27 @@
       transform: scale(1.1);
       transition: 0.2s;
     }
+
+@media (max-width: 600px) {
+    .acerca-img img {
+        height: 35vh;
+    }
+}
     </style>
 </head>
 <body>
 
 <header id="inicio">
-    <h1>Nicolás Moyano</h1>
+
+    <div class="header-top">
+        <img src="assets/logos/nm.png" alt="NM" class="logo" loading="lazy">
+        <h1>Nicolás Moyano</h1>
+    </div>
+
     <p>
-        Contador Público en Córdoba, Argentina, con más de 5 años de experiencia en confección y auditoría de balances,
-        ajuste por inflación contable e impositivo y asesoramiento contable integral para empresas.
+        Asesoramiento contable para empresas que necesitan claridad y crecimiento
     </p>
+
 </header>
 
 <nav>
@@ -165,12 +205,21 @@
 
 <section id="acerca">
     <h2>Acerca de</h2>
-    <div class="card">
-        <p>
-            Soy <strong>Nicolás Moyano</strong>, Contador Público, con experiencia como profesional independiente
-            y en estudios contables, trabajando con empresas comerciales, de servicios e industriales en Córdoba
-            y en todo el país de manera remota.
-        </p>
+
+    <div class="acerca-wrapper">
+
+        <div class="card">
+            <p>
+                Soy <strong>Nicolás Moyano</strong>, Contador Público, con experiencia como profesional independiente
+                y en estudios contables, trabajando con empresas comerciales, de servicios e industriales en Córdoba
+                y en todo el país de manera remota.
+            </p>
+        </div>
+
+        <div class="acerca-img">
+            <img src="assets/img/perfil.png" alt="Nicolás Moyano" loading="lazy">
+        </div>
+
     </div>
 </section>
 
@@ -230,4 +279,3 @@
 
 </body>
 </html>
-
