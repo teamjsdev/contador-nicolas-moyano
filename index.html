@@ -124,24 +124,26 @@
             text-decoration: underline;
         }
 
-        /* Botón WhatsApp */
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            padding: 15px 18px;
-            border-radius: 50%;
-            font-size: 22px;
-            text-decoration: none;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: transform 0.2s;
-        }
+            .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 28px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
 
-        .whatsapp:hover {
-            transform: scale(1.1);
-        }
+    .whatsapp:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+    }
     </style>
 </head>
 <body>
@@ -213,7 +215,8 @@
     <p>© 2026 Nicolás Moyano - Contador Público - Córdoba, Argentina</p>
     <p style="margin-top: 8px; font-size: 0.9rem;">
         Sitio web desarrollado por 
-        <a href="https:/jsdevmobile.com/" target="_blank">JSDev</a>
+        <a href="https:/jsdevmobile.com"
+        target="_blank">JSDev</a>
     </p>
 </footer>
 
